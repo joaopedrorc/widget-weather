@@ -2,7 +2,7 @@ export const mfConfig = {
   name: "widget_weather",
   filename: "remoteEntry.js",
   exposes: {
-    "./Counter": "./src/Counter",
+    "./WeatherWidget": "./src/components/WeatherWidget",
   },
   shared: {
     react: {eager: true},
