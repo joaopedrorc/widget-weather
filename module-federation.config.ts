@@ -2,11 +2,10 @@ export const mfConfig = {
   name: "widget_weather",
   filename: "remoteEntry.js",
   exposes: {
-    "./App": "./src/App", // Adjust path as needed
+    "./Counter": "./src/Counter",
   },
-  shared: ["react", "react-dom"],
-  library: {
-    type: "var",
-    name: "widget_weather", // This will define `window.widget_weather`
-  },
+  shared: {
+    react: {eager: true},
+    "react-dom": { eager: true},
+  }
 };
